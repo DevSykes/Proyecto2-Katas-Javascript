@@ -8,10 +8,8 @@ console.log(jedi);
 nombre: "Leia"
 apellido: "Organa"
 edad: 20
-
 Muestra un mensaje por consola que siga la siguiente estructura:
 "Soy Leia Organa, tengo 20 años y soy una princesa de Alderaan."
-
 Utiliza la concatenación para ello. */
 
 let nombre = "Leia";
@@ -34,7 +32,6 @@ console.log("El precio total de los sables es: " + precioTotal);
 /* Modifica el valor de la variable global precioBaseGlobal a 25.000 créditos.
 Actualiza el precio final (precioFinal) de dos naves ("Ala-X" y "Halcón Milenario") sumando el valor de precioBaseGlobal a su precio base (precioBase).
 let precioBaseGlobal = 10000;
-
 Cambia el precio base en esta linea modificando la variable:
 const nave1 = {nombre: "Ala-X", precioBase: 50000, precioFinal: 60000};
 const nave2 = {nombre: "Halcón Milenario", precioBase: 70000, precioFinal: 80000}; */
