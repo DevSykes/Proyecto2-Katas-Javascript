@@ -1,6 +1,6 @@
-/*En base a este código, cambia todos los *COMPLETAR* por la condición 
+/* En base a este código, cambia todos los *COMPLETAR* por la condición 
 correspondiente para que se lancen todos los console.log correctamente.
-Tienes como referencia el ejemplo del primer if.*/
+Tienes como referencia el ejemplo del primer if. */
 
 const number1 = 10;
 const number2 = 20;
