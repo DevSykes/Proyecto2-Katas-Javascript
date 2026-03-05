@@ -17,4 +17,5 @@ function sumNumbers(numberList) {
     return total;
 }
 
+// Comprobación
 console.log(sumNumbers(numbers));
