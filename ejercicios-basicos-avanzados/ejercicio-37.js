@@ -31,14 +31,14 @@ const movies = [
   },
 ];
 
-const categorias = [];
+const categoriesList = [];
 
 for (const movie of movies) {
   for (const category of movie.categories) {
-    if (!categorias.includes(category)) {
-      categorias.push(category);
+    if (!categoriesList.includes(category)) {
+      categoriesList.push(category);
     }
   }
 }
 
-console.log(categorias);
+console.log(categoriesList);
