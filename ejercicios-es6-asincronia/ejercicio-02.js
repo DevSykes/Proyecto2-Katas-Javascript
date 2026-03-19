@@ -36,6 +36,10 @@ con spread operators. */
 const toy1 = { name: "Bus laiyiar", date: "20-30-1995", color: "multicolor" };
 const toyUpdate = { lights: "rgb", power: ["Volar like a dragon", "MoonWalk"] };
 
+const newToy = { ...toy1, ...toyUpdate };
+
+console.log(newToy);
+
 /* 2.5 Dado el siguiente array. Crear una copia de él eliminando la posición 2
 pero sin editar el array inicial. De nuevo, usando spread operatos. */
 
