@@ -44,3 +44,8 @@ console.log(newToy);
 pero sin editar el array inicial. De nuevo, usando spread operatos. */
 
 const colors = ["rojo", "azul", "amarillo", "verde", "naranja"];
+
+// Excluir posición 2
+const colorsCopy = [...colors.slice(0, 2), ...colors.slice(3)];
+
+console.log(colorsCopy);
