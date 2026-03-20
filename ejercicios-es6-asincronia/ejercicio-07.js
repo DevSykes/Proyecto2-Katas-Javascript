@@ -11,3 +11,11 @@ const videogames = [
   { name: "Genshin Impact", genders: ["RPG", "Aventura"], score: 7.5 },
   { name: "Legend of Zelda: Breath of the wild", genders: ["RPG"], score: 10 },
 ];
+
+const rpgGames = videogames.filter((game) =>
+  game.genders.find((g) => g === "RPG"),
+);
+const totalRpgScore = rpgGames.reduce((sum, game) => sum + game.score, 0);
+const averageRpgScore = totalRpgScore / rpgGames.length;
+
+console.log(averageRpgScore);
