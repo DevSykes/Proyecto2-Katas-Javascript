@@ -12,11 +12,7 @@ const users = [
   { id: 4, name: "Amanda" },
 ];
 
-const userNames = [];
-
-for (let i = 0; i < users.length; i++) {
-  userNames.push(users[i].name);
-}
+const userNames = users.map((user) => user.name);
 
 console.log(userNames);
 
@@ -31,6 +27,12 @@ const users1 = [
   { id: 4, name: "Amanda" },
 ];
 
+const updatedNames = users1.map((user) =>
+  user.name.startsWith("A") ? "Anacleto" : user.name,
+);
+
+console.log(updatedNames);
+
 /* 3.3 Dado el siguiente array, devuelve una lista que contenga los valores
 de la propiedad .name y añade al valor de .name el string ' (Visitado)'
 cuando el valor de la propiedad isVisited = true. */
@@ -41,3 +43,9 @@ const cities = [
   { isVisited: true, name: "Amsterdam" },
   { isVisited: false, name: "Seul" },
 ];
+
+const cityNames = cities.map((city) =>
+  city.isVisited ? `${city.name} (Visitado)` : city.name,
+);
+
+console.log(cityNames);
