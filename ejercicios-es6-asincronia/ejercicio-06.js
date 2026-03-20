@@ -34,3 +34,8 @@ const totalApproved = exams.reduce((sum, exam) => {
 console.log(totalApproved);
 
 /* 6.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce(). */
+
+const averageScore =
+  exams.reduce((sum, exam) => sum + exam.score, 0) / exams.length;
+
+console.log(averageScore);
