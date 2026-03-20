@@ -14,6 +14,12 @@ const exams = [
   { name: "Keanu Reeves", score: 10 },
 ];
 
+const totalScore = exams.reduce((sum, exam) => {
+  return sum + exam.score;
+}, 0);
+
+console.log(totalScore);
+
 /* 6.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los
 alumnos que esten aprobados usando la función .reduce(). */
 
