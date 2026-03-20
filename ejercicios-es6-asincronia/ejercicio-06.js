@@ -23,4 +23,14 @@ console.log(totalScore);
 /* 6.2 Dado el mismo array, haz una suma de todos las notas de los examenes de los
 alumnos que esten aprobados usando la función .reduce(). */
 
+const totalApproved = exams.reduce((sum, exam) => {
+  if (exam.score >= 5) {
+    return sum + exam.score; // sumamos solo si está aprobado
+  } else {
+    return sum; // si no, no sumamos nada
+  }
+}, 0);
+
+console.log(totalApproved);
+
 /* 6.3 Dado el mismo array, haz la media de las notas de todos los examenes .reduce(). */
