@@ -12,10 +12,15 @@ const videogames = [
   { name: "Legend of Zelda: Breath of the wild", genders: ["RPG"], score: 10 },
 ];
 
+// Filtrar juegos
 const rpgGames = videogames.filter((game) =>
   game.genders.find((g) => g === "RPG"),
 );
+
+// Sumar
 const totalRpgScore = rpgGames.reduce((sum, game) => sum + game.score, 0);
+
+// Media
 const averageRpgScore = totalRpgScore / rpgGames.length;
 
 console.log(averageRpgScore);
