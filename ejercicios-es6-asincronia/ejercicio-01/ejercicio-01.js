@@ -8,7 +8,7 @@ const game = {
   year: 2020,
 };
 
-// Destructuring obj
+// Destructuring
 const { title, gender, year } = game;
 
 console.log(title);
