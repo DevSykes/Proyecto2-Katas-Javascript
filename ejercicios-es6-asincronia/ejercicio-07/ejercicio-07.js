@@ -12,7 +12,7 @@ const videogames = [
   { name: "Legend of Zelda: Breath of the wild", genders: ["RPG"], score: 10 },
 ];
 
-// Filtrar juegos
+// Filtrar juegos rpg
 const rpgGames = videogames.filter((game) =>
   game.genders.find((g) => g === "RPG"),
 );
