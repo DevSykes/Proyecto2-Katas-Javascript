@@ -13,3 +13,41 @@ URL de la documentación (para que indaguéis): https://thronesapi.com/
 Esta sería la URL final (la que deberéis utilizar para vuestra petición):
 
 https://thronesapi.com/api/v2/Characters */
+
+// ====================================================
+
+const select = document.getElementById("character-list");
+const img = document.querySelector(".character-image");
+
+// obtener pjs de API
+const fetchCharacters = async () => {
+  try {
+    const res = await fetch("https://thronesapi.com/api/v2/Characters");
+    const data = await res.json();
+
+    // Destructuring
+    data.forEach(({ fullName, imageUrl }) => {
+      const option = document.createElement("option");
+      option.value = imageUrl; // URL imagen
+      option.textContent = fullName; // Nombre pj
+      select.appendChild(option);
+    });
+  } catch (error) {
+    console.error("Error cargando los personajes:", error);
+  }
+};
+
+// Imagen según pj
+select.addEventListener("change", (e) => {
+  const imageUrl = e.target.value;
+  if (imageUrl) {
+    img.src = imageUrl;
+    img.alt = select.options[select.selectedIndex].text;
+  } else {
+    img.src = "";
+    img.alt = "";
+  }
+});
+
+// Llamada a función
+fetchCharacters();
