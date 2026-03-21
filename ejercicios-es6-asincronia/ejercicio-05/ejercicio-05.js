@@ -21,10 +21,10 @@ input.addEventListener("input", (event) => {
     streamer.name.toLowerCase().includes(searchText),
   );
 
-  // Limpiar la lista
+  // Limpiar lista
   list.innerHTML = "";
 
-  // Añadir streamers filtrados
+  // streamers filtrados
   filteredStreamers.forEach((streamer) => {
     const li = document.createElement("li");
     li.textContent = streamer.name;
