@@ -1,6 +1,5 @@
 /* NOTA: He cambiado la const original users a users1 en el ejercicio 3.2
-para evitar errores de sintaxis de nuevo. Si hay otro método, no lo 
-he conseguido encontrar. */
+para evitar errores de sintaxis de nuevo. */
 
 /* 3.1 Dado el siguiente array, devuelve un array con sus nombres
 utilizando .map(). */
