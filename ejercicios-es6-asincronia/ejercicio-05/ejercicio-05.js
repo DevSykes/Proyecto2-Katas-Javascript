@@ -9,3 +9,25 @@ const streamers = [
   { name: "Reven", age: 43, gameMorePlayed: "League of Legends" },
   { name: "AuronPlay", age: 33, gameMorePlayed: "Among Us" },
 ];
+
+const input = document.querySelector('[data-function="toFilterStreamers"]');
+const list = document.querySelector('[data-function="streamerList"]');
+
+input.addEventListener("input", (event) => {
+  const searchText = event.target.value.toLowerCase();
+
+  // Filtrar
+  const filteredStreamers = streamers.filter((streamer) =>
+    streamer.name.toLowerCase().includes(searchText),
+  );
+
+  // Limpiar la lista
+  list.innerHTML = "";
+
+  // Añadir streamers filtrados
+  filteredStreamers.forEach((streamer) => {
+    const li = document.createElement("li");
+    li.textContent = streamer.name;
+    list.appendChild(li);
+  });
+});
