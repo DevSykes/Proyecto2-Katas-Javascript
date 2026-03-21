@@ -25,9 +25,9 @@ alumnos que esten aprobados usando la función .reduce(). */
 
 const totalApproved = exams.reduce((sum, exam) => {
   if (exam.score >= 5) {
-    return sum + exam.score; // sumamos solo si está aprobado
+    return sum + exam.score;
   } else {
-    return sum; // si no, no sumamos nada
+    return sum;
   }
 }, 0);
 
