@@ -21,7 +21,6 @@ const toys = [
 ];
 
 for (const toy of toys) {
-  // Comprobar si sellCount es mayor que 15
   if (toy.sellCount > 15) {
     popularToys.push(toy);
   }
